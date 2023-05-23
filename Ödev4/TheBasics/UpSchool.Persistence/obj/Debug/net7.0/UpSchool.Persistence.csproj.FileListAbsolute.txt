@@ -1,0 +1,17 @@
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\bin\Debug\net7.0\UpSchool.Persistence.deps.json
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\bin\Debug\net7.0\UpSchool.Persistence.runtimeconfig.json
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\bin\Debug\net7.0\UpSchool.Persistence.dll
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\bin\Debug\net7.0\UpSchool.Persistence.pdb
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\bin\Debug\net7.0\UpSchool.Domain.dll
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\bin\Debug\net7.0\UpSchool.Domain.pdb
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.csproj.AssemblyReference.cache
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.AssemblyInfoInputs.cache
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.AssemblyInfo.cs
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.csproj.CopyComplete
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.dll
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\refint\UpSchool.Persistence.dll
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.pdb
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\UpSchool.Persistence.genruntimeconfig.cache
+C:\Users\fidan\source\repos\UpSchool-TheBasics-master\TheBasics\UpSchool.Persistence\obj\Debug\net7.0\ref\UpSchool.Persistence.dll
