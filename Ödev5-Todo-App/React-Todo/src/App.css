@@ -75,8 +75,10 @@ h1 {
   justify-content: flex-start;
   width: 500px;
   min-height: 500px;
-  background:   #b8e6b8;
   text-align: center;
+  background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
   margin: 128px auto;
   border-radius: 5px;
 }
@@ -113,4 +115,5 @@ h1 {
   align-items: center;
   margin-bottom: 20px;
 }
+
 

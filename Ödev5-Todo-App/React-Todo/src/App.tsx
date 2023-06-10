@@ -48,12 +48,17 @@ const App: React.FC = () => {
     const newSortOrder = value === "true" ? "asc" : "desc";
     setSortOrder(newSortOrder);
   };
-
-  const sortedTodos = [...todos].sort((a, b) =>
-    sortOrder === "asc"
-      ? new Date(a.createDate).getTime() - new Date(b.createDate).getTime()
-      : new Date(b.createDate).getTime() - new Date(a.createDate).getTime()
-  );
+  
+  const sortedTodos = [...todos].sort((a, b) => {
+    const dateA = new Date(a.createDate);
+    const dateB = new Date(b.createDate);
+  
+    if (sortOrder === "asc") {
+      return dateA.getTime() - dateB.getTime();
+    } else {
+      return dateB.getTime() - dateA.getTime();
+    }
+  });
 
   const sortOptions = [
     { key: "asc", text: "Ascending", value: "true" },
