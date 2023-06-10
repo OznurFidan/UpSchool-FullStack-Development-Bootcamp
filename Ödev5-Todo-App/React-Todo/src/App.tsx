@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Header, Input, List, Icon,Button, Select } from "semantic-ui-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import moment from "moment";
 import "./App.css";
 
 interface Todo {
@@ -102,12 +103,12 @@ const App: React.FC = () => {
                
               </List.Content>
               <List.Content>
-                <List.Header>
-                  <span
+                <List.Header >
+                  <div style={{display:"inline-block", paddingLeft: "20px",width:"75%" }}
                     className={todo.isCompleted ? "completed-task" : ""}
                   >
                     {todo.task}
-                  </span>
+                  </div>
                   <Button
                   icon
                   onClick={() => deleteTodo(todo.id)}
@@ -116,9 +117,7 @@ const App: React.FC = () => {
                   <FontAwesomeIcon icon={faTrashAlt} />
                 </Button>
                 </List.Header>
-                <List.Description>
-                   {todo.createDate}
-                </List.Description>
+                
               </List.Content>
             </List.Item>
           ))}

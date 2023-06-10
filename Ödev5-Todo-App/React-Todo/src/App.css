@@ -11,13 +11,16 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 500px;
   min-height: 500px;
   background: white;
   text-align: center;
   margin: 128px auto;
   border-radius: 5px;
+}
+.input{
+  display: inline-block !important;
 }
 h1 {
   margin: 32px 0;
