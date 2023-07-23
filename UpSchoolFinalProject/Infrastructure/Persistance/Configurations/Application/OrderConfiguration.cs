@@ -39,6 +39,18 @@ namespace Infrastructure.Persistance.Configurations.Application
             builder.Property(x => x.IsDeleted).IsRequired();
             builder.Property(x => x.IsDeleted).HasDefaultValueSql("0");
 
+            builder.HasMany<Product>(x => x.Products)
+                .WithOne(x => x.Order)
+                .HasForeignKey(x => x.OrderId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade); ;
+
+            builder.HasMany<OrderEvent>(x => x.OrderEvents)
+                .WithOne(x => x.Order)
+                .HasForeignKey(x => x.OrderId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade);
+
             builder.ToTable("Orders");
         }
     }

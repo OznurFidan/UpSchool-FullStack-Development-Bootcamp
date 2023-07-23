@@ -23,12 +23,14 @@ namespace Application.Features.Products.Command.Add
         {
             var product = new Product()
             {
+                Id=request.Id,
                 OrderId = request.OrderId,
                 Name = request.Name,
                 Picture = request.Picture,
                 Price = request.Price,
                 ProductCrawlType = request.ProductCrawlType,
                 SalePrice = request.SalePrice,
+                CreatedOn=DateTimeOffset.Now,
             };
 
             await _applicationDbContext.Products.AddAsync(product, cancellationToken);

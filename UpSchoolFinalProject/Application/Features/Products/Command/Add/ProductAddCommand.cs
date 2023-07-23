@@ -12,6 +12,7 @@ namespace Application.Features.Products.Command.Add
 {
     public class ProductAddCommand : IRequest<Response<Guid>>
     {
+        public Guid Id { get; set; }
         public Guid OrderId { get; set; }
 
         public string Name { get; set; }

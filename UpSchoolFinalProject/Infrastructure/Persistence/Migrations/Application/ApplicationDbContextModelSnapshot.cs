@@ -26,22 +26,27 @@ namespace Infrastructure.Persistence.Migrations.Application
                         .HasColumnType("char(36)");
 
                     b.Property<string>("CreatedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset>("CreatedOn")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("DeletedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset?>("DeletedOn")
                         .HasColumnType("datetime(6)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("tinyint(1)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("tinyint(1)")
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("ModifiedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset?>("ModifiedOn")
                         .HasColumnType("datetime(6)");
@@ -55,9 +60,13 @@ namespace Infrastructure.Persistence.Migrations.Application
                     b.Property<int>("TotalFoundAmount")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.OrderEvent", b =>
@@ -67,22 +76,27 @@ namespace Infrastructure.Persistence.Migrations.Application
                         .HasColumnType("char(36)");
 
                     b.Property<string>("CreatedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset>("CreatedOn")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("DeletedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset?>("DeletedOn")
                         .HasColumnType("datetime(6)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("tinyint(1)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("tinyint(1)")
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("ModifiedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset?>("ModifiedOn")
                         .HasColumnType("datetime(6)");
@@ -97,7 +111,7 @@ namespace Infrastructure.Persistence.Migrations.Application
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderEvents");
+                    b.ToTable("OrderEvents", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -107,29 +121,35 @@ namespace Infrastructure.Persistence.Migrations.Application
                         .HasColumnType("char(36)");
 
                     b.Property<string>("CreatedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset>("CreatedOn")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("DeletedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset?>("DeletedOn")
                         .HasColumnType("datetime(6)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("tinyint(1)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("tinyint(1)")
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("ModifiedByUserId")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTimeOffset?>("ModifiedOn")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(256)
+                        .HasColumnType("varchar(256)");
 
                     b.Property<Guid>("OrderId")
                         .HasColumnType("char(36)");
@@ -145,13 +165,14 @@ namespace Infrastructure.Persistence.Migrations.Application
                         .HasColumnType("int");
 
                     b.Property<decimal?>("SalePrice")
+                        .IsRequired()
                         .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.OrderEvent", b =>

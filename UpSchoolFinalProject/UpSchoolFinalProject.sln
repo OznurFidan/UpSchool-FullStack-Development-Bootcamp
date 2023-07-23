@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33717.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6679C1F9-C3B9-487C-860B-868516881509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{6679C1F9-C3B9-487C-860B-868516881509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{4C3E4448-A828-4C93-909F-1ED8194DD1CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{4C3E4448-A828-4C93-909F-1ED8194DD1CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{3AC312F8-8C26-4AD9-B74F-E9515BD8E7FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{3AC312F8-8C26-4AD9-B74F-E9515BD8E7FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{AE4B9384-CE59-407D-986B-E557D2BD8923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{AE4B9384-CE59-407D-986B-E557D2BD8923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium", "Selenium\Selenium.csproj", "{B0D7E9DD-B69E-41C7-8805-E984F0798D2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selenium", "Selenium\Selenium.csproj", "{B0D7E9DD-B69E-41C7-8805-E984F0798D2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorker", "BackgroundWorker\BackgroundWorker.csproj", "{B41ACD87-D92E-4C70-9BF4-BEFFA5C01BC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B0D7E9DD-B69E-41C7-8805-E984F0798D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0D7E9DD-B69E-41C7-8805-E984F0798D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0D7E9DD-B69E-41C7-8805-E984F0798D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41ACD87-D92E-4C70-9BF4-BEFFA5C01BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41ACD87-D92E-4C70-9BF4-BEFFA5C01BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41ACD87-D92E-4C70-9BF4-BEFFA5C01BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41ACD87-D92E-4C70-9BF4-BEFFA5C01BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

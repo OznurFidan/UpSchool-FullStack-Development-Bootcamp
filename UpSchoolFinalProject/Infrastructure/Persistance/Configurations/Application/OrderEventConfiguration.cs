@@ -35,12 +35,12 @@ namespace Infrastructure.Persistance.Configurations.Application
             builder.Property(x => x.IsDeleted).IsRequired();
             builder.Property(x => x.IsDeleted).HasDefaultValueSql("0");
 
-            builder.ToTable("Order");
+            builder.ToTable("OrderEvents");
 
             // Relationships
-            builder.HasOne<Order>(x => x.Order)
-                .WithMany(x => x.OrderEvents)
-                .HasForeignKey(x => x.OrderId);
+            //builder.HasOne<Order>(x => x.Order)
+            //    .WithMany(x => x.OrderEvents)
+            //    .HasForeignKey(x => x.OrderId);
         }
     }
 }

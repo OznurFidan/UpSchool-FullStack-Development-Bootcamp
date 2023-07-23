@@ -48,9 +48,11 @@ namespace Infrastructure.Persistance.Configurations.Application
             builder.ToTable("Products");
 
             // Relationships
-            builder.HasOne<Order>(x => x.Order)
-                .WithMany(x => x.Products)
-                .HasForeignKey(x => x.OrderId);
+            //builder.HasOne<Order>(x => x.Order)
+            //    .WithMany(x => x.Products)
+            //    .HasForeignKey(x => x.OrderId);
+
+            
         }
     }
 }

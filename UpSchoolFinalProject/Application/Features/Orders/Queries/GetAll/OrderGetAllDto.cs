@@ -15,7 +15,7 @@ namespace Application.Features.Orders.Queries.GetAll
 
         public int TotalFoundAmount { get; set; }
 
-        public ProductCrawlType ProductCrawlType { get; set; }
+        //public ProductCrawlType ProductCrawlType { get; set; }
         public bool? IsDeleted { get; set; }
     }
 }

@@ -1,9 +1,21 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.AspNetCore.SignalR.Client;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using static System.Collections.Specialized.BitVector32;
 
 IWebDriver driver = new ChromeDriver();
-driver.Navigate().GoToUrl("https://finalproject.dotnet.gg/");
+
+
+
+var hubConnection = new HubConnectionBuilder()
+    .WithUrl($"https://localhost:7196/Hubs/SeleniumLogHub")
+    .WithAutomaticReconnect()
+    .Build();
+
+await hubConnection.StartAsync();
+
+
+driver.Navigate().GoToUrl("https://4teker.net/");
 
 
 Thread.Sleep(1000);

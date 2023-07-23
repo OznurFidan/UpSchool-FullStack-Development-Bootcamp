@@ -24,7 +24,7 @@ namespace Application.Features.Orders.Queries.GetAll
         {
             var dbQuery = _applicationDbContext.Orders.AsQueryable();
 
-            dbQuery=dbQuery.Where(x=>x.Id == request.Id);
+            //dbQuery=dbQuery.Where(x=>x.Id == request.Id);
             if (request.IsDeleted.HasValue) dbQuery = dbQuery.Where(x => x.IsDeleted == request.IsDeleted.Value);
 
             var order = await dbQuery
@@ -41,7 +41,7 @@ namespace Application.Features.Orders.Queries.GetAll
                 Id = order.Id,
                 RequestedAmount=order.RequestedAmount,
                 TotalFoundAmount=order.TotalFoundAmount,
-                ProductCrawlType=order.ProductCrawlType,
+                //ProductCrawlType=order.ProductCrawlType,
                 IsDeleted = order.IsDeleted,
 
             };
